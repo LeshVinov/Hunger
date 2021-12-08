@@ -1,0 +1,76 @@
+@font-face {
+    font-family: Banny;
+    src: url(../fonts/Banny-Round.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+}
+
+.block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    background-color: lightslategray;
+}
+
+.navigation {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.nav_item {
+    width: 133px;
+    height: 100px;
+    color: #FFFFFF; 
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav_logo {
+    margin-top: 25px;
+    margin-right: 35px;
+    margin-left: 35px;
+}
+
+/* секция промо */
+
+.social_buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.social_link {
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.social_link:last-child {
+    margin-bottom: 0;
+}
