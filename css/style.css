@@ -14,9 +14,11 @@ html {
 }
 
 .container {
+    position: relative;
     max-width: 1280px;
     width: 100%;
     margin: auto;
+    z-index: 54;
 }
 
 .block {
@@ -171,6 +173,7 @@ html {
 .button_primary {
     background: #E8C300;
     border-radius: 5px;
+    text-transform: uppercase;
 }
 
 .button_secondary {
@@ -300,7 +303,7 @@ html {
     content: "";
     position: absolute;
     width: 100%;
-    height: 705px;
+    height: 679px;
     background: rgba(0, 0, 0, 0.6);
     z-index: 0;
 }
@@ -309,6 +312,7 @@ html {
     padding-top: 45px;
     padding-bottom: 45px;
     text-align: center;
+    position: relative;
 }
 
 .chef_subtitle {
@@ -354,4 +358,119 @@ html {
     position: absolute;
     top: 50%;
     left: 0;
+}
+
+/* section_book */
+
+.section_book {
+    padding-top: 100px;
+}
+
+.section_form {
+    max-width: 565px;
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input_form {
+    max-width: 277px;
+    width: 48%;
+    height: 60px;
+    background: #E5E5E5;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(51, 51, 51, 0.5);
+    border-radius: 5px;
+    padding-top: 23px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.button_form {
+    width: 100%;
+}
+
+.time_text {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;    
+    color: rgba(51, 51, 51, 0.5);
+    border-radius: 5px;
+}
+
+.time_container {
+    justify-content: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+/* .section_chocolate */
+
+.section_chocolate {
+    background: url(../img/specialtys_bg.png) no-repeat center / cover;
+}
+
+.section_chocolate::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 679px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+.slider_container {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    justify-content: center;
+}
+
+.slider {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.slider_selected {
+    background: #FFFFFF;
+}
+
+/* delicious-menu */
+
+.delicious-menu {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.block_delicious_text {
+    margin: auto;
+}
+
+.delicious_menu-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.menu_item {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    color: #333333;
+    padding: 20px 40px;
+    border-right: 1px solid rgba(51, 51, 51, 0.2);
+}
+
+.menu_item:last-child {
+    border-right: none;
 }
