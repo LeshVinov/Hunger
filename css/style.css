@@ -474,3 +474,114 @@ html {
 .menu_item:last-child {
     border-right: none;
 }
+
+.menu_item {
+    text-decoration: none;
+}
+
+.menu_products {
+    display: flex;
+    margin-top: 50px;
+}
+
+.product {
+    margin-right: 95px;
+}
+
+.column_3 .product {
+    margin-right: 0;
+}
+
+.product_name {
+    font-family: Banny;
+    font-size: 18px;
+    line-height: 18px;
+    color: #333333;
+}
+
+.product_desc {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 5px;
+    margin-bottom: 35px;
+}
+
+/* section_events */
+
+.section_events {
+    background: url(../img/specialtys_bg.png) no-repeat center / cover;
+    position: relative;
+}
+
+.section_events:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 681px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+.events_text-container {
+    position: relative;
+}
+
+.events_text {
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    color: rgba(255, 255, 255, 0.5);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.description_img{
+    position: absolute;
+    background: #000000;
+    transform: rotate(90deg);
+    display: flex;
+    align-items: center;
+    width: 476px;
+    height: 80px;
+    top: 197px;
+    left: 325px;
+    justify-content: start;
+    padding-left: 20px;
+}
+
+.description_text{
+    z-index: 999;
+    text-transform: uppercase;
+    font-family: Banny;
+    font-size: 24px;
+    line-height: 12px;
+    color: #FFFFFF;
+}
+
+.description_img1{
+    position: absolute;
+    background: #000000;
+    transform: rotate(-90deg);
+    display: flex;
+    align-items: center;
+    width: 476px;
+    height: 80px;
+    top: 197px;
+    right: 325px;
+    justify-content: start;
+    padding-left: 20px;
+}
+
+/* random_imgs */
+
+.random_imgs-container {
+    display: flex;
+    justify-content: center;
+}
+
+.random_img {
+    width: 480px;
+    height: 480px;
+}
