@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -97,15 +98,15 @@
         <div class="container block">
             <div class="section_text">
                 <h2 class="section_title title">book a table</h2>
-                <form action="#" class="section_form">
+                <form action="#" class="section_form" id="form1">
                     <input type="text" class="input_form" name="name" placeholder="Name">
                     <input type="email" class="input_form" name="email" placeholder="Email">
-                    <input type="number" class="input_form" name="number" placeholder="Phone">
-                    <select name="gender" class="input_form" id="select_1">
+                    <input type="phone" class="input_form" name="number" placeholder="Phone">
+                    <select name="gender" class="input_form select_form" id="select_1">
                         <option value="" selected>People</option>
                     </select>
                     <input type="data" class="input_form" name="date" placeholder="Date (mm/dd)">
-                    <select name="time" class="input_form" id="select_time">
+                    <select name="time" class="input_form select_form" id="select_time">
                         <option value="" selected>Time</option>
                     </select>
                     <button class="button button_form button_primary">BOOK now</button>
@@ -309,7 +310,7 @@
         </div>
         <!-- /.container -->
         <div class="events_text-container">
-            <p class="events_text time_text">For private events please call: +40 729 131 637/+40 726 458 782 or use the contact form.</p>
+            <p class="events_text time_text">For private events please call: <strong>+40 729 131 637/+40 726 458 782</strong> or use the contact form.</p>
         </div>
         <!-- /.events_text-container -->
     </section>
@@ -324,5 +325,49 @@
         <!-- /.random_imgs-container container -->
     </section>
     <!-- /.random_imgs -->
+    <section class="section_contact">
+        <div class="section_text block_delicious_text">
+            <h2 class="section_title title title_banny title_bold">CONTACT</h2>
+            <h3 class="block_text-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</h3>
+        </div>
+        <!-- /.section_text -->
+        <form action="#" id="form2">
+            <div class="form_contact_container container">
+                <input type="text" class="input_form contact_input" name="name" placeholder="Name">
+                <input type="email" class="input_form contact_input" name="email" placeholder="Email">
+                <input type="phone" class="input_form contact_input before_message" name="number" placeholder="Phone">
+                <textarea name="message" id="message_contact" class="input_form contact_form" placeholder="Message"></textarea>
+            </div>
+            <!-- /.form_contact_container -->
+            <div class="addres-and-button_container container">
+                <div class="addres_container">
+                    <img src="./img/marker.png" alt="Вам звонок" class="contact_img">
+                    <p class="text_contact title_bold">5th London Boulevard, U.K.</p>
+                </div>
+                <!-- /.addres_container -->
+                <div class="addres_container">
+                    <img src="./img/phone.png" alt="Вам звонок" class="contact_img">
+                    <p class="text_contact title_bold">+40 729 131 637/+40 726 458 782</p>
+                </div>
+                <!-- /.addres_container -->
+                <div class="addres_container">
+                    <img src="./img/mail.png" alt="Вам звонок" class="contact_img">
+                    <p class="text_contact title_bold">office@mindblister.com</p>
+                </div>
+                <!-- /.addres_container -->
+                <button class="button button_form button_primary button_contact">SEND message</button>
+            </div>
+            <!-- /.addres_button_container -->
+        </form>
+    </section>
+    <!-- /.section_contact -->
+    <aside class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95911.90993157671!2d37.57801327824396!3d55.75158281678582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a3a867e4df3%3A0x256444395b16de96!2sHungry%20Angels%20Catering!5e0!3m2!1sru!2sru!4v1639136719071!5m2!1sru!2sru" width="100%" height="475" style="border:0;" loading="lazy"></iframe>
+    </aside>
+    <!-- /.map -->
+    <footer class="footer">
+        <p class="copyright">© Copyright <strong>Mindblister</strong>  2019</p>
+    </footer>
+    <!-- /.footer -->
 </body>
 </html>

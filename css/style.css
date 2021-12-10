@@ -36,6 +36,10 @@ html {
     line-height: 18px;
 }
 
+textarea {
+    resize: none;
+}
+
 .header {
     position: relative;
     z-index: 9999;
@@ -376,7 +380,7 @@ html {
 }
 
 .input_form {
-    max-width: 277px;
+    max-width: auto;
     width: 48%;
     height: 60px;
     background: #E5E5E5;
@@ -388,10 +392,12 @@ html {
     line-height: 19px;
     color: rgba(51, 51, 51, 0.5);
     border-radius: 5px;
-    padding-top: 23px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    text-indent: 20px;
+    appearance: none;
+}
+
+.select_form {
+    background: #E5E5E5 url(../img/arrowDown.svg) no-repeat 240px;
 }
 
 .button_form {
@@ -584,4 +590,85 @@ html {
 .random_img {
     width: 480px;
     height: 480px;
+}
+
+/* section_contact */
+
+.section_contact {
+    padding: 100px 80px;
+}
+
+.title_bold {
+    font-weight: bold;
+}
+
+.contact_input {
+    max-width: 420px;
+    width: 100%;
+    margin-right: 10px;
+}
+
+.before_message {
+    margin-right: 0;
+}
+
+.contact_form {
+    max-width: 1280px;
+    width: 100%;
+    height: 120px;
+    padding-top: 20px;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.form_contact_container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.addres-and-button_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.addres_container {
+    display: flex;
+    align-items: center;
+}
+
+.text_contact {
+    font-size: 12px;
+    line-height: 12px;
+    color: rgba(51, 51, 51, 0.5);
+}
+
+.contact_img {
+    max-width: 15px;
+    margin-right: 5px;
+}
+
+.button_contact {
+    max-width: 640px;
+}
+
+/* section_map */
+
+ 
+
+/* footer */
+
+.footer {
+    padding: 44px 0;
+    background: rgba(0, 0, 0, 0.9);
+    color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.copyright {
+    font-size: 12px;
+    line-height: 12px; 
 }
