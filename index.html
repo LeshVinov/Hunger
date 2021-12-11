@@ -15,15 +15,15 @@
 <body>
     <header class="header">
         <nav class="container navigation">
-            <a href="#" class="nav_item">Home</a>
-            <a href="#" class="nav_item">About</a>
-            <a href="#" class="nav_item">Team</a>
-            <a href="#" class="nav_item">Booking</a>
-            <a href="index.html" class="nav_logo"><img src="./img/logo.svg" alt="логотип" class="logo_img"></a>
-            <a href="#" class="nav_item">Menu</a>
-            <a href="#" class="nav_item">Galerie</a>
-            <a href="#" class="nav_item">Events</a>
-            <a href="#" class="nav_item">Contact</a>
+            <a href="#" class="nav_item home_menu">Home</a>
+            <a href="#" class="nav_item abut_menu">About</a>
+            <a href="#" class="nav_item team_menu">Team</a>
+            <a href="#" class="nav_item booking_menu">Booking</a>
+            <a href="index.html" class="nav_logo nav_logo_menu"><img src="./img/logo.svg" alt="логотип" class="logo_img logo_img_disappear"></a>
+            <a href="#" class="nav_item menu_menu">Menu</a>
+            <a href="#" class="nav_item galerie_menu">Galerie</a>
+            <a href="#" class="nav_item events_menu">Events</a>
+            <a href="#" class="nav_item contact_menu">Contact</a>
         </nav>
         <!-- /.container navigation -->
     </header>
@@ -35,7 +35,7 @@
             </div>
             <!-- /.block_text -->
             <div class="promo_main">
-                <h3 class="section_subtitle">RESTAURANT</h3>
+                <h3 class="section_subtitle promo_subtitle">RESTAURANT</h3>
                 <h1 class="promo_title title">hungry people</h1>
                 <div class="buttons">
                     <button class="button button_promo button_primary">BOOK TABLE</button>
@@ -56,7 +56,7 @@
     </section>
     <!-- /.section section_promo -->
     <section class="section_about-us">
-        <div class="container block">
+        <div class="container block abutus_container">
             <div class="section_text">
                 <h2 class="section_title title">About Us</h2>
                 <h3 class="block_text-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</h3>
@@ -64,7 +64,7 @@
             </div>
             <!-- /.section_text -->
             <div class="block_img">
-                <img class="about-us_img" src="./img/about-img.jpg" alt="Дать прогореть костру до углей, досок, при этом, веток не жалей">
+                <img class="about-us_img abutus_img" src="./img/about-img.jpg" alt="Дать прогореть костру до углей, досок, при этом, веток не жалей">
             </div>
             <!-- /.block_img -->
         </div>
@@ -76,9 +76,9 @@
             <h3 class="section_subtitle chef_subtitle">OUR TEAM</h3>
         </div>
         <!-- /.chef_subtitle-container -->
-        <div class="container block">
+        <div class="container block abutus_container">
             <div class="block_img_alt">
-                <img class="about-us_img" src="./img/chef.jpg" alt="Повар спрашивает повара">
+                <img class="about-us_img chef_img" src="./img/chef.jpg" alt="Повар спрашивает повара">
             </div>
             <!-- /.block_img -->
             <div class="section_text">
@@ -113,8 +113,8 @@
                 </form>
             </div>
             <!-- /.section_text -->
-            <div class="block_img">
-                <img class="about-us_img" src="./img/cocks.png" alt="Время поджимает, но только вас. Не меня..">
+            <div class="block_img cock_img_container">
+                <img class="about-us_img cock_img abutus_img" src="./img/cocks.png" alt="Время поджимает, но только вас. Не меня..">
             </div>
             <!-- /.block_img -->
         </div>
@@ -130,9 +130,9 @@
             <h3 class="section_subtitle chef_subtitle"> specialties</h3>
         </div>
         <!-- /.chef_subtitle-container -->
-        <div class="container block">
+        <div class="container block chocolate_container">
             <div class="block_img_alt">
-                <img class="about-us_img" src="./img/food.png" alt="А пахнэ як.. вкусно">
+                <img class="about-us_img chef_img" src="./img/food.png" alt="А пахнэ як.. вкусно">
             </div>
             <!-- /.block_img -->
             <div class="section_text">
@@ -290,9 +290,9 @@
             <h3 class="section_subtitle chef_subtitle"> specialties</h3>
         </div>
         <!-- /.chef_subtitle-container -->
-        <div class="container block">
+        <div class="event_container container block">
             <div class="block_img_alt">
-                <img class="about-us_img" src="./img/widding.png" alt="Свадьба">
+                <img class="event_img" src="./img/widding.png" alt="Свадьба">
                 <div class="description_img">
                     <p class="description_text">weddings</p>
                 </div>
@@ -345,16 +345,19 @@
                     <p class="text_contact title_bold">5th London Boulevard, U.K.</p>
                 </div>
                 <!-- /.addres_container -->
-                <div class="addres_container">
+                <div class="addres_container number_container">
                     <img src="./img/phone.png" alt="Вам звонок" class="contact_img">
                     <p class="text_contact title_bold">+40 729 131 637/+40 726 458 782</p>
                 </div>
                 <!-- /.addres_container -->
-                <div class="addres_container">
+                <div class="addres_container mail_container">
                     <img src="./img/mail.png" alt="Вам звонок" class="contact_img">
                     <p class="text_contact title_bold">office@mindblister.com</p>
                 </div>
                 <!-- /.addres_container -->
+                <button class="button button_form button_primary button_contact button_contact_appear">SEND message</button>
+            </div>
+            <div class="button_adapt_container">
                 <button class="button button_form button_primary button_contact">SEND message</button>
             </div>
             <!-- /.addres_button_container -->
