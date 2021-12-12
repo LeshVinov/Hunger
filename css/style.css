@@ -40,6 +40,11 @@ textarea {
     resize: none;
 }
 
+.map {
+    display: flex;
+    justify-content: center;
+}
+
 .header {
     position: relative;
     z-index: 9999;
@@ -236,7 +241,7 @@ textarea {
 }
 
 .buttons {
-    margin-top: 58 px;
+    margin-top: 58px;
 }
 
 /* section_about-us */
@@ -385,7 +390,6 @@ textarea {
 }
 
 .input_form {
-    max-width: auto;
     width: 48%;
     height: 60px;
     background: #E5E5E5;
@@ -695,7 +699,7 @@ textarea {
 }
 
 .nav_item:hover {
-    filter: drop-shadow(0 0 0 5px white);
+    filter: drop-shadow(0 0 5px white);
 }
 
 .button_primary:hover {
@@ -919,6 +923,7 @@ textarea {
     }
     .buttons {
         display: flex;
+        margin-top: 0;
     }
     .button_promo {
         padding: 15px 35px;
@@ -955,7 +960,7 @@ textarea {
         margin-bottom: 15px;
     }
     .section_master-chef::before {
-        height: 742px;
+        height: 792px;
     }
     .block_text-subtitle {
         font-size: 15px;
@@ -973,7 +978,7 @@ textarea {
         flex-direction: column;
     }
     .section_chocolate::before {
-        height: 742px;
+        height: 792px;
     }
     .product_name {
         font-size: 14px;
@@ -1096,6 +1101,15 @@ textarea {
     }
     .button {
         padding: 10px 20px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .section_master-chef::before {
+        max-height: 713px;
+    }
+    .section_chocolate::before {
+        max-height: 713px;
     }
 }
 

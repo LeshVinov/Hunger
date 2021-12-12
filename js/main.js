@@ -1,4 +1,4 @@
-const linkDown = document.querySelectorAll('.link_down');
+// const linkDown = document.querySelectorAll('.link_down');
 // const secondSection = document.querySelector('.section_about-us')
 // 
 // const trackScroll = () => {
@@ -10,7 +10,7 @@ const linkDown = document.querySelectorAll('.link_down');
 // linkDown.addEventListener('click', (e) => {
     // e.preventDefault()
     // trackScroll()
-// }) Анимация прокрутки на сайте
+// }) 
 
 
 
