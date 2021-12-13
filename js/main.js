@@ -1,16 +1,20 @@
-// const linkDown = document.querySelectorAll('.link_down');
-// const secondSection = document.querySelector('.section_about-us')
-// 
-// const trackScroll = () => {
-// 
-    // window.scrollBy(0, secondSection.offsetTop)
-// 
-// }
-// 
-// linkDown.addEventListener('click', (e) => {
-    // e.preventDefault()
-    // trackScroll()
-// }) 
+const linkDown = document.querySelector('.link_down');
+const secondSection = document.querySelector('.section_about-us')
+const secondSectionY = secondSection.offsetTop
+
+let intervalId
+
+const trackScroll = () => {
+    window.scrollBy(0, 30)
+    if (window.pageYOffset >= secondSectionY) {
+        clearInterval(intervalId)
+    }
+}
+
+linkDown.addEventListener('click', (e) => {
+    e.preventDefault()
+    intervalId = setInterval(trackScroll, 20)
+}) 
 
 
 
